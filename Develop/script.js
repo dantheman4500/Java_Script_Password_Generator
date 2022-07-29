@@ -11,9 +11,9 @@
     
   };
   function random_list_item(list){
-    return list[randon_Number(0, list.length - 1)]
+    return list[randon_Number(0, list.length)]
   }
-
+console.log(random_list_item);
 // Writing out password in the DOM
 function writePassword() {
   var password = generatePassword();
@@ -89,8 +89,8 @@ generateBtn.addEventListener("click", writePassword);
     
     for(var i = 0 ; i < Password_length; i++){
       var random_list =  random_list_item(password_choices)
-      var random = random_list_item(random_list)
-      generatePassword += random
+      var random_array_Iteam = random_list_item(random_list)
+      generatePassword += random_array_Iteam
     }
 
     return generatePassword
